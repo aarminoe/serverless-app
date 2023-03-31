@@ -7,3 +7,5 @@ function Board() {
         </div>
     )
 }
+
+export default Board
