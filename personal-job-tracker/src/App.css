@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-card {
+  width: 1000px;
+  background-color: blue;
+}
+
+.one-card {
+  height: 200px;
+  width: 500px;
 }
 
 

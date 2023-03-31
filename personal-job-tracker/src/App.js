@@ -1,30 +1,41 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Applied from './Applied';
-import Board from './Board';
 import Header from './Header';
 import Offer from './Offer';
 import Round1 from './Round1';
 import Round2 from './Round2';
 import Round3 from './Round3';
 import Waiting from './Waiting';
+import { Card } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <head>
-        
-      </head>
-      <div><Header /></div>
-      <Routes>
-        <Route path='/applied' element={<Applied/>}/>
-        <Route path='/offers' element={<Offer/>}/>
-        <Route path='/waiting' element={<Waiting/>}/>
-        <Route path='/round-1' element={<Round1/>}/>
-        <Route path='/round-2' element={<Round2/>}/>
-        <Route path='/round-3' element={<Round3/>}/>
-      </Routes>
-    </div>
+    <Card >
+      <Card className='header-card'>
+        <Header />
+      </Card>
+      <Card className="App">
+        <Card className='one-card'>
+          <Applied/>
+        </Card>
+        <Card className='one-card'>
+          <Round1/>
+        </Card >
+        <Card className='one-card'>
+          <Round2/>
+        </Card>
+        <Card className='one-card'>
+          <Round3/>
+        </Card>
+        <Card className='one-card'>
+          <Waiting/>
+        </Card>
+        <Card className='one-card'>
+          <Offer/>
+        </Card>
+      </Card>
+    </Card>
   );
 }
 
