@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
     return(
-        <div>header here</div>
+        <div>
+            <Link to={"/"}
+        </div>
     )
 }
