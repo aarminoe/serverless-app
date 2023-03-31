@@ -1,7 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Applied from './Applied';
-import Header from './Header';
 import Offer from './Offer';
 import Round1 from './Round1';
 import Round2 from './Round2';
@@ -12,9 +10,6 @@ import { Card } from '@mui/material';
 function App() {
   return (
     <Card >
-      <Card className='header-card'>
-        <Header />
-      </Card>
       <Card className="App">
         <Card className='one-card'>
           <Applied/>
