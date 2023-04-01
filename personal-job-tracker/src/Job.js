@@ -1,8 +1,14 @@
 import React from "react";
+import { useState } from "react";
 
 function Job() {
+
+    const [company, setCompany] = useState("")
+    const [title, setTitle] = useState("")
+    const [skills, setSkills] = useState("")
+
     return(
-        <div>
+        <form>
             <p>
                 Company
                 <input></input>
@@ -16,6 +22,8 @@ function Job() {
                 <input></input>
             </p>
             
-        </div>
+        </form>
     )
 }
+
+export default Job

@@ -5,6 +5,7 @@ import Round1 from './Round1';
 import Round2 from './Round2';
 import Round3 from './Round3';
 import Waiting from './Waiting';
+import Job from './Job';
 import { Card } from '@mui/material';
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           <Offer/>
         </Card>
       </Card>
+      <div>
+        <h1>Add Job</h1>
+         <Job />
+      </div>
     </Card>
   );
 }
