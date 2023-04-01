@@ -7,6 +7,8 @@ import Round3 from './Round3';
 import Waiting from './Waiting';
 import Job from './Job';
 import { Card } from '@mui/material';
+import JobCard from './JobCard';
+
 
 function App() {
   return (
