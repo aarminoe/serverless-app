@@ -9,14 +9,14 @@ function Applied() {
 
     return(
         <div>
-            applied
-            <Card  className="drag">
+            <div>
+                <h1>Applied</h1>
                 {appliedJobs.map((job)=> {
                     return(
                         <JobCard job={job}/>
                     )
                 })}
-            </Card>
+            </div>
         </div>
     )
 }

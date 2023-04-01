@@ -5,9 +5,10 @@ import Round1 from './Round1';
 import Round2 from './Round2';
 import Round3 from './Round3';
 import Waiting from './Waiting';
-import Job from './Job';
+import AddJobSection from './AddJobSection';
 import { Card } from '@mui/material';
 import Closed from './Closed';
+import Header from './Header';
 import JobCard from './JobCard';
 import { useState } from 'react';
 
@@ -41,7 +42,7 @@ function App() {
       </Card>
       <div>
         <h1>Add Job</h1>
-         <Job />
+        <AddJobSection />
       </div>
     </Card>
   );

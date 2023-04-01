@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Job() {
+function AddJobSection() {
 
     const [company, setCompany] = useState("")
     const [title, setTitle] = useState("")
@@ -9,7 +9,12 @@ function Job() {
 
     function addJob(e) {
         e.preventDefault()
+        console.log(company)
+        console.log(title)
+        console.log(skills)
     }
+
+    
 
     return(
         <form onSubmit={addJob}>
@@ -30,4 +35,4 @@ function Job() {
     )
 }
 
-export default Job
+export default AddJobSection

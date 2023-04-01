@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "@mui/material";
 
 function JobCard({job}) {
 
@@ -11,11 +12,11 @@ function JobCard({job}) {
     }
 
     return(
-        <div>
+        <Card className="single-job-card">
             <button onClick={moveBack}>MoveBack</button>
             JobCard
             <button onClick={moveUp}>MoveUp</button>
-        </div>
+        </Card>
     )
 }
 
