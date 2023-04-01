@@ -1,13 +1,13 @@
 import React from "react";
 
-function JobCard() {
+function JobCard({job}) {
 
-    function moveUp() {
-        console.log()
+    function moveUp(e) {
+        console.log(job)
     }
 
     function moveBack() {
-
+        
     }
 
     return(

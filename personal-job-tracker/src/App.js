@@ -7,10 +7,13 @@ import Round3 from './Round3';
 import Waiting from './Waiting';
 import Job from './Job';
 import { Card } from '@mui/material';
+import Closed from './Closed';
 import JobCard from './JobCard';
+import { useState } from 'react';
 
 
 function App() {
+
   return (
     <Card >
       <Card className="App">
@@ -31,6 +34,9 @@ function App() {
         </Card>
         <Card className='one-card'>
           <Offer/>
+        </Card>
+        <Card className='one-card'>
+          <Closed />
         </Card>
       </Card>
       <div>
