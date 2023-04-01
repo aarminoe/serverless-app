@@ -7,21 +7,25 @@ function Job() {
     const [title, setTitle] = useState("")
     const [skills, setSkills] = useState("")
 
+    function addJob(e) {
+        e.preventDefault()
+    }
+
     return(
-        <form>
+        <form onSubmit={addJob}>
             <p>
                 Company
-                <input></input>
+                <input onChange={(e) => setCompany(e.target.value)}/>
             </p>
             <p>
                 Title
-                <input></input>
+                <input onChange={(e) => setTitle(e.target.value)}/>
             </p>
             <p>
                 Skills Needed
-                <input></input>
+                <input onChange={(e) => setSkills(e.target.value)}/>
             </p>
-            
+            <button>Add</button>
         </form>
     )
 }
