@@ -16,7 +16,9 @@ import { useState } from 'react';
 function App() {
 
   return (
-    <Card >
+    <div>
+      <Header />
+          <Card >
       <Card className="App">
         <Card className='one-card'>
           <Applied/>
@@ -44,7 +46,9 @@ function App() {
         <h1>Add Job</h1>
         <AddJobSection />
       </div>
-    </Card>
+      </Card>
+    </div>
+
   );
 }
 
